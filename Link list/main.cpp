@@ -24,18 +24,17 @@ void printNode(Node *head);
 void addLast(Node *&head, int value);
 void addAfter(Node *head, int v, int value);
 void deleteFirst(Node *&head);
-void deleteLast(Node *head);
+void deleteLast(Node *&head);
+void deleteNode(Node *head, int v);
 
 int main() {
 
     Node *head;
     init(head);
 
-    addFirst(head, 100);
-    addLast(head, 200);
-    addAfter(head, 200, 55);
-    
-    // deleteLast(head);
+    for (int i = 0; i < 10; i++) {
+        addLast(head, i);
+    }
 
     printNode(head);
     
@@ -136,4 +135,26 @@ void deleteLast(Node *&head) {
             delete last;
         }
     }
+}
+
+void deleteNode(Node *head, int v) {
+    if (head != NULL) {
+        Node *p = head;
+        Node *prev = NULL;
+
+        while(p != NULL && p->value != v) {
+            prev = p;
+            p = p->next;
+        }
+        if (p != NULL) {
+            if (prev != NULL) {
+                prev->next = p->next;
+                p->next = NULL;
+                delete p;
+            } else {
+                deleteFirst(head);
+            }
+        }
+    }
+
 }
