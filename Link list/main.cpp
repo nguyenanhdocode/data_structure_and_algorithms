@@ -35,7 +35,7 @@ int main() {
     addLast(head, 200);
     addAfter(head, 200, 55);
     
-    deleteLast(head);
+    // deleteLast(head);
 
     printNode(head);
     
