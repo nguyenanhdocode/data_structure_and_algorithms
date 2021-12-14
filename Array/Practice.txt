@@ -1,0 +1,11 @@
+Bài tập 1:
+Viết chương trình theo yêu cầu sau:
+1. Khai báo một mảng số nguyên lưu tối đa 100 phần tử;
+2. Viết hàm cho phép người dùng nhập các giá trị vào mảng.
+3. Viết hàm in ra các giá trị vừa nhập, các phần tử nằm trên một dòng cách nhau bởi khoảng trắng.
+4. Viết hàm tính tổng các giá trị trong mảng.
+5. Viết hàm tìm phần tử có giá trị lớn nhất, giá trị nhỏ nhất trong mảng.
+6. Viết hàm cho phép người dùng tìm kiếm một giá trị trong mảng và thông báo vị trí của phần tử nếu tìm thấy.
+7. Viết hàm sắp xếp mảng giảm dần.
+Viết code để test các hàm trên.
+
