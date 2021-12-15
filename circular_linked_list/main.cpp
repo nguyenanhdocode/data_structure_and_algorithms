@@ -22,34 +22,25 @@ int main() {
     return 0;
 }
 
+
 void init(CircularLinkedList &ls) {
+    
     ls.head = NULL;
     ls.tail = NULL;
 }
 
+
 Node* createNode(int value) {
-    Node* p = new Node;
+ 
+    Node *p = new Node;
     p->value = value;
     p->next = NULL;
-    
+ 
     return p;
 }
 
+
 void addFirst(CircularLinkedList &ls, int value) {
-    
+
     Node *p = createNode(value);
-
-    if (ls.head == NULL) {
-        ls.head = ls.tail = p;
-        ls.tail->next = ls.head;
-    } else {
-        p->next = ls.head;
-        ls.head = p;
-        ls.tail->next = ls.head;
-    }
-
-}
-
-void printNode(const CircularLinkedList ls) {
-    
 }
